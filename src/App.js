@@ -1,11 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './test.less';
+import BrowserRouter, { Route } from 'react-router-dom'
+import Sidebar from './components/Sidebar/Sidebar'
+import Projects from './components/Projects'
+import './main.less';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Sidebar />
+        <Route exact path ={process.env.PUBLIC_URL + '/'} component={ Projects } />
+      </div>
+    </BrowserRouter>
   );
 }
 

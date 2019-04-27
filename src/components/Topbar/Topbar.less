@@ -1,0 +1,45 @@
+
+@main-text-color:#676873;
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar {
+  color: @main-text-color;
+  height: 65px;
+  background: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.011);
+  .breadcrumbs {
+    margin-left: 20px;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__dropdown {
+      padding: 5px 20px;
+    }
+    &__notification {
+      padding: 5px 20px;
+      border-right: 1px solid #eee;
+      svg {
+        width: 15px;
+        height: 15px;
+        fill: #BCBCCB;
+      }
+    }
+    &__profile-image img {
+      height: 30px;
+      width: 30px;
+      border-radius: 15px;
+    }
+  }
+}

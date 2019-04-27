@@ -1,15 +1,25 @@
-@link-color:        #428bca;
+@link-color:        #3B86FF;
 @link-color-hover:  darken(@link-color, 10%);
+@light-main-color: #F0F0F7;
 
-// Usage
+@import "./components/Sidebar/Sidebar.less";
+
 a,
 .link {
   color: @link-color;
+  text-decoration: none;
 }
 a:hover {
   color: @link-color-hover;
 }
-.widget {
-  color: #fff;
+.main {
+  margin-left: 250px;
+  width: calc(100vw - 250px);
+  min-height: 100vh;
+  background: @light-main-color;
+}
+
+button {
   background: @link-color;
+  padding: 10px;
 }

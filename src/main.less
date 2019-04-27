@@ -2,8 +2,14 @@
 @link-color-hover:  darken(@link-color, 10%);
 @light-main-color: #F0F0F7;
 @white: #fff;
+@main-text-color:#676873;
+@light-text-color: #A3A6B4;
 
 @import "./components/Sidebar/Sidebar.less";
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+}
 
 a,
 .link {
@@ -24,4 +30,43 @@ button {
   background: @link-color;
   padding: 10px;
   color: @white;
+}
+
+.page-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.panel {
+  background: @white;
+  padding: 20px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.011);
+}
+
+table {
+  width: 100%;
+  font-size: 12px;
+  color: @main-text-color;
+  border-collapse: collapse;
+  border-spacing: 0;
+  th,td {
+    padding: 15px;
+  }
+  thead {
+    text-align: left;
+    background: @light-main-color;
+    th {
+      color:@light-text-color;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+  tbody {
+    tr {
+      td{
+        border-bottom: 1px solid @light-main-color;
+      }
+    }
+  }
 }
